@@ -5,7 +5,7 @@ import joblib
 from sklearn.preprocessing import StandardScaler
 
 # Tiêu đề ứng dụng
-st.set_page_config(page_title="Dự đoán Stress Sinh viên", page_icon="😊", layout="wide")
+st.set_page_config(page_title="DỰ ĐOÁN MỰC ĐỘ STRESS", page_icon="😊", layout="wide")
 
 st.title("🎓 Dự đoán Mức độ Stress cho Sinh viên")
 st.markdown("Ứng dụng sử dụng mô hình Machine Learning để dự đoán mức độ stress dựa trên các yếu tố học tập và cuộc sống.")
@@ -202,4 +202,5 @@ if model is not None:
             st.success("🌟 Các chỉ số của bạn khá cân bằng! Hãy duy trì lối sống hiện tại.")
 
 else:
+
     st.warning("⚠️ Vui lòng chạy file 'train_model.py' trước để huấn luyện mô hình!")
